@@ -1,0 +1,5 @@
+#signup label { 
+    display: inline-block;     /* 또는 float: left;*/ 
+    font-size: 13px; 
+    width: 110px;
+}

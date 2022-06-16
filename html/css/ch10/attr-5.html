@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ^은 특정 속성값으로 시작할 때 */
+        /* *는 중간 속성값 */
+        /* $는 끝나는 값 */
+        div { height: 1000px;}
+        [title ^= 'eng'] { color: red;}
+        a[title ^= 'eng'] { background-color: yellow;}
+    </style>
+</head>
+<body>
+    <!--스크롤이동?메뉴이동?은 #으로 시작-->
+    <ul>
+        <li><a href="#ch1" title="english">영어</a></li>
+        <li><a href="#" title="japanese">일본어</a></li>
+        <li><a href="#" title="chinese">중국어</a></li>
+    </ul>
+    <div>아무거나 ㅇㅇ</div>
+    <div title="engdfadf" id="ch1">아무거나</div>
+</body>
+</html>

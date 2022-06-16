@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+* {
+     
+        
+    }
+a { text-decoration: none;
+     color:#fff;
+     
+}
+.wrap { 
+     ont-weight:100;
+     display: grid;     
+     grid-template-columns:repeat(3, 1fr);
+     grid-template-rows:repeat(3, 1fr);
+     /*
+     grid-template-areas: 
+          "header top-bar top-bar"
+          "header main main"
+          "header main main";*/
+}
+
+.wrap .header {
+     grid-row:1/4;
+     grid-column: 1;
+     height: 100%;
+     background-color: rgb(238, 75, 75);
+     color:#fff;
+     text-decoration:none;
+     max-width:50rem;
+
+}
+
+.wrap .header .logo {
+     margin:0 auto;
+     padding: 40px 20px 20px 30px;
+     font-family: 'Shrikhand', cursive;
+}
+
+.wrap .header .nav__wrap .nav__container {
+    
+     
+}
+
+.wrap .header .nav__wrap .nav__container .nav__title {
+     background-color: rgb(250, 102, 102);     
+     height: 2.5rem;
+     display: block;
+     padding-top: 20px;
+     padding-left: 20px;
+     margin-top: 30px;
+}
+
+.wrap .header .nav__item {
+     padding: 10px 0 10px 20px;
+    
+
+}
+
+.wrap .top-bar {
+     grid-row: 1;
+     grid-column: 2/4;
+}
+
+
+.wrap .top-bar .search__label {
+     display: none;
+}
+
+.wrap .top-bar .search
+
+.wrap .top-bar .search__input {
+     padding-left: 10px;
+     border: 1px solid rgb(218, 215, 215);
+     
+}
+.wrap .top-bar .profile__icon {
+     display: flex;
+     background-color: rgb(110, 38, 245);
+     color: #fff;  
+     justify-content: center;
+     align-items: center;
+     font-weight: bolder;
+     padding-right:3px;
+     padding-bottom:3px;
+     font-style: italic;
+     border-radius: 50%;
+     width: 2rem;
+     height: 2rem;
+
+     
+}
+
+.wrap .main {
+     grid-row: 2/4;
+     grid-column: 2/4;
+}

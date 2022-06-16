@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            /*justify-content는 메인방향 정렬*/
+            align-items: flex-end;
+            height: 300px;
+            border: 1px solid #111;
+            background-color: aliceblue;
+            padding:5px;
+        }
+        div[id^='opt'] {
+
+            background-color:#000; color:#fff;
+        }
+        /* 플렉스는 기본적으로 부모역할을 할 대상이 필요하다 */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="opt1">1</div>
+        <div id="opt1">2</div>
+        <div id="opt1">3</div>
+        <div id="opt1">4</div>
+    </div>
+</body>
+</html>

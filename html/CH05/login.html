@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action 과 method는 백엔드에 필요.
+         reset 버튼은 value 값을 초기 형태로 돌려주는것
+         <button>은 type="submit"이 생략되어 있다.
+     -->
+    <form action="/login" method="post">
+        <fieldset>
+            <label>아이디 : <input type="text" name="user_id" value="ddd"></label>
+            <label>비밀번호 : <input type="password" name="user_pw"></label>
+            <!-- 부득이하게 줄이 나뉘어져 있을 경우 아래와 같이 입력하면 네임 클릭만으로 입력란으로 이동가능하다-->
+            <div>
+                <label for="user_gender">성별</label>
+            </div>
+            <div>
+                <input type="text" id="user_gender" name="user_gender">
+            </div>
+            <input type="submit" value="로그인">
+            <input type="reset" value="초기화">
+        </fieldset>
+        <input type="submit" value="서브밋버튼">
+        <input type="button" value="버튼">
+        <button>버튼2</button>
+</body>
+</html>

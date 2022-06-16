@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+* { 
+     padding:0; margin:0; 
+     box-sizing: border-box;
+}
+body, html { height:100%; }
+a { text-decoration: none;
+     color:#fff;
+     
+}
+.wrap { 
+     height:100vh;
+     display: grid;     
+     grid-template-columns:repeat(3, 1fr);
+     grid-template-rows:1.5rem 1fr 1fr;
+         
+}
+
+.wrap .header {
+     grid-row:1/4;
+     grid-column: 1;
+     height: 100%;
+     background-color: rgb(238, 75, 75);
+     color:#fff;
+     text-decoration:none;
+     max-width:50rem;
+
+}
+
+.wrap .header .logo {
+     margin:0 auto;
+     padding: 40px 20px 20px 30px;
+     font-family: 'Shrikhand', cursive;
+}
+
+
+.wrap .header .nav__wrap .nav__container .nav__title {
+     background-color: rgb(250, 102, 102);     
+     height: 2.5rem;
+     display: block;
+     padding-top: 20px;
+     padding-left: 20px;
+     margin-top: 30px;
+}
+
+.wrap .header .nav__item {
+     padding: 10px 0 10px 20px;
+    
+
+}
+
+.wrap .top-bar {
+     display: flex;
+     grid-row: 1;
+     grid-column: 2/4;
+}
+.wrap .top-bar .search {
+     height: 10px;
+     
+}
+
+.wrap .top-bar .search__form {
+     display: flex;
+     width:60vw;      
+     padding-left: 0.3rem;
+}
+
+.wrap .top-bar .search__form input{
+     display: flex;    
+     width: 100%;
+     border: 1px solid rgb(226, 225, 225);
+     padding-left: 0.5rem;
+}
+
+.wrap .top-bar .search__label {
+     display: none;
+
+}
+
+.top-bar .search__form #idSearch { 
+     display: inline-block;
+     height: 100%;
+     width: 100%;
+     padding: 10px 10px;
+ }
+
+.wrap .top-bar .profile {
+     display: flex;
+     background-color: rgb(129, 61, 255);     
+     color: white;     
+     font-family: 'Shrikhand', cursive;     
+     box-shadow: 2px 2px 1px 1px rgb(148, 148, 148);
+     height: 40px;
+     height: 40px;
+     margin-left: 15px;    
+     border-radius: 50%;
+     align-items: center;
+     justify-content: center;     
+     
+}
+
+.wrap .main {
+     grid-row: 2/4;
+     grid-column: 2/4;
+}
+.wrap .main .main__header{
+       
+     background-image: url(http://unsplash.it/1200/600?image=495);
+     margin: 0;
+     height: 9%;
+     color: white;
+     background-repeat: no-repeat;
+     background-size: cover;     
+}
+
+.wrap .main .main__header h2 {
+     
+     height: 100%;
+     width: 100%;
+     background-color: #00000090;
+     display: flex;   
+     justify-content: center;
+     align-items: center;
+     font-size: 3rem;
+     margin: 0 auto;
+     
+}
+
+.wrap .main .main__body {
+     display: grid;
+
+}
+
+.wrap .main .main__body .listing-card {
+    
+}
+
+.wrap .main .main__body .listing-card__list {
+     display: grid;
+     gap:2rem;
+     grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+
+}
+
+.wrap .main .main__body .listing-card__list li{
+     
+}
+
+.wrap .main .main__body .listing-card__list .listing-card__image {
+     height: 15rem;
+     background-size: cover;
+}
+
+.wrap .main .main__body .listing-card__list .listing-card__info {
+     padding-top: 10px;
+     font-size: larger;
+
+}
+
+.wrap .main .main__body .listing-card__list .listing-card__date {
+     color: rgb(151, 151, 151)
+}
+
+.wrap .main ul {
+     list-style-type: none;
+}

@@ -1,0 +1,39 @@
+#container {
+    width:1000px;
+    margin:20px auto;
+  }
+  h1 {
+    text-align:center;
+  }
+  .prod-list {
+    list-style:none;    
+    padding:0;
+  }
+  .prod-list li {
+    float: left;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .prod-list img {
+    margin:0;
+    padding:0;    
+    float:left;
+    z-index:5;
+  }
+  .prod-list .caption {
+    position:absolute;
+    text-align: center;    
+    top: 200px;   
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    display: hidden;
+  }
+  .prod-list li:hover .caption{
+    background-color: #00000080;    
+    color: white;    
+    transform: translateY(-200px);
+  }

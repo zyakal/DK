@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Form</h1>
+    <form action="/login">
+        <!-- hidden은 사용자가 확인이 필요없는 백엔드에 활용할 자료만-->
+        <div>
+            <input type="hidden" name="iuser" value="1" readonly>
+        </div>
+        <div>
+            <input type="text" name="uid" placeholder="user id" autofocus required>
+        </div>
+        <div>
+            <input type="password" name="upw" placeholder="user password" required>
+        </div>
+        <!-- accept로 원하는 파일만 받을 수 있다. multiple로 하나이상의 자료를 받을 수 있다-->
+        <div><label>프사 : <input type="file" name="pic" accept="image/*" multiple></label></div>
+        <div><label>남긴 말 <textarea name="cmt" ></textarea></label></div>
+        <div>
+            <!--백엔드에 보내는 데이터를 보여지는 것과 실제 보내지는 값을 다르게 할 경우  value값을 입력하면된다.
+                체크박스와 라디오버튼은 value 값이 꼭 있어야 백엔드로 자료가 넘어간다.
+            -->
+            <labe> 지역 :
+                <select name="location">
+                    <option value="1">서울</option>
+                    <option value="2">대전</option>
+                    <option value="3" selected>대구</option>
+                    <option value="4">부산</option>
+                </select>
+            </labe>                   
+        </div>
+        <div>
+            취미 :
+            <label><input type="checkbox" name="hobbit" value="1" checked>농구</label>
+            <label><input type="checkbox" name="hobbit" value="2">축구</label>
+            <label><input type="checkbox" name="hobbit" value="3" checked>배구</label>
+            <label><input type="checkbox" name="hobbit" value="4">탁구</label>
+        </div>
+        <div>
+            성별 :
+            <label>여성<input type="radio" name="gender" value="f" checked></label>
+            <label>남성<input type="radio" name="gender" value="m ></label>
+        </div>
+        <div>
+            <input type="submit" value="login">
+            <input type="reset" value="reset">
+        </div>
+
+    </form>
+</body>
+</html>

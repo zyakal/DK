@@ -1,0 +1,47 @@
+#signup input[type='text'],
+#signup input[type='password'],
+#signup input[type='tel'],
+#signup input[type='email'] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    width: 200px;
+}
+input { line-height: 14px;}
+
+#signup input[required] {
+    border: 1px solid red;
+}
+#signup input[readonly] {
+    border: none;
+}
+#signup label { 
+    display: inline-block;
+    width: 110px;
+    
+}
+#signup  {
+    border:2px solid;
+    padding: 10px 10px 40px 10px;
+    border-radius: 5px;
+    
+
+}
+
+fieldset {
+    margin-top: 20px;
+}
+
+fieldset button {
+    margin:0;
+        
+    border-radius: 20px;
+}
+
+ul > li: not(:last-child) {
+    margin-bottom: 5px;
+}
+ul > li: not(:first-child) {
+    margin-top: 5px;
+}

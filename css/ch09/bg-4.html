@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box { 
+            width: 300px; height: 300px; margin: 20px; 
+            background: url('images/bg4.jpg') no-repeat left top;      
+            border: 1px solid #ccc;      
+        }
+        /* auto가 기본값, 생략되어있다. bg3의 경우 50% auto 와 같다.
+        cover의 경우 가로로 긴 이미지의 경우 세로부터 맞추고 가로가 잘린다. 반대로 세로로 긴 이미지는 가로부터 맞추고 세로가 잘린다.
+        */
+        #bg1 { background-size: auto;}
+        #bg2 { background-size: auto 200px;}
+        #bg3 { background-size: 50%;}
+        #bg4 { background-size: 100% 100%;}
+        #bg5 { background-size: contain;}
+        #bg6 { background-size: cover;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="bg1"></div>
+        <div class="box" id="bg2"></div>
+        <div class="box" id="bg3"></div>
+        <div class="box" id="bg4"></div>
+        <div class="box" id="bg5"></div>
+        <div class="box" id="bg6"></div>
+    </div>
+</body>
+</html>
