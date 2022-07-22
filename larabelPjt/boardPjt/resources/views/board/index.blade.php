@@ -10,12 +10,8 @@
     <h1>board index</h1>
     <div>ddd</div>
     <div>
-        <a href="<?=route('boards.create')?>">
-        <button type="button">글쓰기</button>
-        </a>
-        <a href="<?=route('boards.show', ['i_board' => 10])?>">
-            <button type="button">디테일</button>
-        </a>    
+        <a href="<?=route('boards.create')?>"><button type="button">글쓰기</button></a>
+        <a href="<?=route('boards.show', ['i_board' => 10])?>"><button type="button">디테일</button></a>    
 
     </div>
     <div>
@@ -27,7 +23,7 @@
                 <th>등록일</th>
             </tr>
             @foreach($list as $item)
-            <tr>
+            <tr class="row" data-id="{{$item->id}}">
                 <td>{{$item->id}}</td>
                 <td>{{$item->title}}</td>
                 <td>{{$item->hits}}</td>
@@ -37,5 +33,16 @@
             @endforeach
         </table>
     </div>
+    <script>
+        const rowList = document.querySelectorAll('.row');
+        if(rowList){
+            rowList.forEach(item => {
+                item.addEventListener('click', e =>{
+                    location.href = `/boards/show?id=${item.dataset.id}`;
+                })
+                
+            });
+        }
+    </script>
 </body>
 </html>

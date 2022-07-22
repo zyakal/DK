@@ -26,6 +26,15 @@ Route:: prefix('boards')->group(function(){
     Route::post('store', [BoardController::class, 'store'])->name('boards.store');
 
     Route::get('show', [BoardController::class, 'show'])->name('boards.show');
+    
+    Route::get('edit', [BoardController::class, 'edit'])->name('boards.edit');
+
+    Route::post('update', [BoardController::class, 'update'])->name('boards.update');
+
+    Route::get('destroy', [BoardController::class, 'destroy']);
+
+    
+
 
 
 });
